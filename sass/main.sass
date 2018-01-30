@@ -1,0 +1,632 @@
+
+@import "_variables.sass"
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+
+/* Main styles */
+
+*
+	font-family: "OpenSans", sans-serif
+
+body
+	background: #f6f2f2
+	margin-top: 89px
+
+p
+	color: rgba(0, 0, 0, 0.7)
+	font-size: 1.2em
+	font-weight: 400
+	line-height: 1.597
+	margin: 0
+
+h2
+	color: rgba(0, 0, 0, 0.7)
+	font-size: 2.7em
+	font-weight: 700
+	line-height: 1.5em
+	text-transform: uppercase
+
+.button
+	background: none
+	border-radius: 5px
+	border: 2px solid #ff2d2d
+	box-shadow: none
+	box-sizing: border-box
+	padding: 10px 50px
+	transition: 0.5s
+
+	&:hover
+		background: #ff2d2d
+		transition: 0.5s
+
+		a
+			color: #fff
+
+	a
+		color: #ff2d2d
+		font-size: 1.2em
+		font-weight: 700
+		text-decoration: none
+		text-transform: capitalize
+		transition: 0.5s
+
+		&:hover
+			color: #fff
+			text-decoration: none
+			transition: 0.5s
+
+/* Header */
+
+.header
+	position: relative
+
+.container--header
+	position: fixed
+	left: 50%
+	top: 0
+	transform: translate(-50%, 0%)
+	z-index: 500
+
+.navbar
+	background: rgba(0, 0, 0, 0.8)
+	border-radius: 0
+
+.navbar-nav
+	align-items: center
+	display: -ms-flex
+	display: -webkit-flex
+	display: flex
+	height: 89px
+	justify-content: center
+	list-style: none
+	padding: 0
+	width: 100%
+
+	li
+		align-items: center
+		display: -ms-flex
+		display: -webkit-flex
+		display: flex
+		height: 100%
+		justify-content: center
+		transition: 0.5s
+
+		&:hover
+			background: $pink
+			transition: 0.5s
+
+		.active
+			background: $pink
+
+		a
+			align-items: center
+			color: #fff
+			display: -ms-flex
+			display: -webkit-flex
+			display: flex
+			font-size: 1em
+			height: 100%
+			justify-content: center
+			padding: 0 20px
+			text-decoration: none
+			text-transform: uppercase
+			width: 100%
+
+.navbar .navbar-toggler
+	position: relative
+	height: 50px
+	width: 50px
+	border: none
+	cursor: pointer
+	outline: none
+	background: transparent
+	display: none
+
+.navbar .navbar-toggler .menu-icon-bar
+  position: absolute
+  left: 15px
+  right: 15px
+  height: 2px
+  background-color: #fff
+  opacity: 0
+  -webkit-transform: translateY(-1px)
+  -ms-transform: translateY(-1px)
+  transform: translateY(-1px)
+  transition: all 0.3s ease-in
+
+.navbar .navbar-toggler .menu-icon-bar:first-child
+  opacity: 1
+  -webkit-transform: translateY(-1px) rotate(45deg)
+  -ms-sform: translateY(-1px) rotate(45deg)
+  transform: translateY(-1px) rotate(45deg)
+
+.navbar .navbar-toggler .menu-icon-bar:last-child
+  opacity: 1
+  -webkit-transform: translateY(-1px) rotate(135deg)
+  -ms-sform: translateY(-1px) rotate(135deg)
+  transform: translateY(-1px) rotate(135deg)
+
+.navbar .navbar-toggler.collapsed .menu-icon-bar
+  opacity: 1
+
+.navbar .navbar-toggler.collapsed .menu-icon-bar:first-child
+  -webkit-transform: translateY(-7px) rotate(0)
+  -ms-sform: translateY(-7px) rotate(0)
+  transform: translateY(-7px) rotate(0)
+
+.navbar .navbar-toggler.collapsed .menu-icon-bar:last-child
+  -webkit-transform: translateY(5px) rotate(0)
+  -ms-sform: translateY(5px) rotate(0)
+  transform: translateY(5px) rotate(0)
+
+/* Organaisation section */
+
+.container--organaisation
+	padding: 100px 0
+
+.organaisation__h1,
+h1
+	font-size: 3.75em
+	font-weight: 800
+	letter-spacing: 5px
+	margin: 0
+	text-transform: uppercase
+	line-height: 1.2em
+
+.organaisation__p
+	width: 75%
+	letter-spacing: 1px
+	margin: 50px 0
+
+/* Organaisation section / video block */
+
+.organaisation__video
+	display: -ms-flex
+	display: -webkit-flex
+	display: flex
+	justify-content: flex-end
+
+.organaisation__video-box
+	align-items: center
+	background-image: url(/img/doroga.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	box-shadow: 7px -10px 73px 0px rgba(0, 0, 0, 0.43)
+	display: -ms-flex
+	display: -webkit-flex
+	display: flex
+	justify-content: center
+	min-height: 350px
+	width: 90%
+
+/* Do you know section */
+
+.information
+	position: relative
+	z-index: 300
+
+.information,
+.feature
+	background: #fff
+
+.container--information,
+.feature
+	padding: 100px 0
+
+.douknow__h2,
+h2
+	margin: 0
+	width: 70%
+
+/* Services block */
+
+.services
+	display: -ms-flex
+	display: -webkit-flex
+	display: flex
+	flex-wrap: wrap
+
+.service
+	width: 50%
+
+.service__h3
+	color: rgba(0, 0, 0, 0.7)
+	font-weight: 700
+	margin: 40px 0 20px 0
+
+.service__p
+	margin: 0 0 30px 0
+	width: 80%
+
+.line
+	background: #ececec
+	height: 2px
+	width: 100%
+
+/* Title */
+
+.container--title
+	align-items: center
+	display: -ms-flex
+	display: -webkit-flex
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+.title__h2
+	text-align: center
+
+.title__p
+	text-align: center
+	width: 35%
+	margin: 30px 0
+
+.line__small
+	width: 140px
+	background: $pink
+	height: 3px
+
+/* Grid */
+
+.element-item
+	height: 300px
+	background-image: url(/img/gallery/fulls/01.jpg)
+	margin: 15px 0
+	background-size: cover
+
+.element__img
+	width: 100%
+
+.button-group
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	justify-content: center
+	padding: 50px 0
+
+.filter-selector
+	background: transparent
+	border: none
+	padding: 0 20px
+	text-transform: uppercase
+	font-size: 1.5em
+	transition: 0.5s
+
+	&:active,
+	&:focus,
+	&:hover
+		outline: none
+		color: $pink
+		transition: 0.5s
+
+/* Team section */
+
+.team
+	background: #fff
+	padding-bottom: 100px
+
+.flex-nav-prev,
+.flex-nav-next
+	display: none
+
+.team__p,
+.slide__p
+	width: 30%
+	margin: 30px 0
+
+.flexslider
+	margin-top: 50px
+
+.slide
+	display: -ms-flex !important
+	display: -webkit-flex !important
+	display: flex !important
+	flex-direction: row
+
+.slide__name
+	font-size: 2em
+	text-transform: uppercase
+	font-weight: 600
+
+.slide__img
+	height: 450px
+	margin: 0
+	width: calc(25% - 30px)
+	background-size: cover
+
+.slide__info
+	width: 75%
+
+.slide__bio
+	position: absolute
+	width: 70%
+	right: 0
+
+.slide__p
+	width: 70%
+
+.flex-control-thumbs
+	bottom: 0
+	display: -ms-flex
+	display: -webkit-flex
+	display: flex
+	justify-content: space-between
+	position: absolute
+	right: 0
+	width: 70%
+	z-index: 400
+
+	li
+		overflow: hidden
+		position: relative
+		width: 23%
+
+.social-network
+	padding: 0 30px 0 0
+
+	a
+		color: rgba(0, 0, 0, 0.7)
+		font-size: 1.4em
+		font-style: italic
+		font-weight: 600
+		line-height: 1.4em
+		text-decoration: none
+
+.flex-control-thumbs img
+	width: 110%
+
+.flex-control-thumbs li::after
+	align-items: center
+	background: rgba(0, 0, 0, 0.5)
+	bottom: -100px
+	color: #fff
+	content: "KEK"
+	display: -ms-flex
+	display: -webkit-flex
+	display: flex
+	float: left
+	font-size: 1.2em
+	font-weight: 600
+	justify-content: center
+	left: 0
+	min-height: 40px
+	position: absolute
+	text-transform: uppercase
+	transition: 0.5s
+	width: 100%
+
+.flex-control-thumbs li
+	max-height: 250px
+
+	&:hover::after
+		bottom: 0px
+		transition: 0.5s
+
+/* Mailing section */
+
+.mailing
+	background: #F2EDDB
+	padding: 100px 0
+	background-position: 0 -250px
+
+.mailing__h2
+	color: #fff
+	font-size: 2.7em
+	text-align: center
+	text-transform: none
+	width: 100%
+
+.mailing__p
+	color: #fff
+	margin: 30px 0
+	text-align: center
+	width: 100%
+
+.mailing__input
+	background: #fff
+	border-radius: 5px
+	border: none
+	margin-right: 20px
+	padding: 30px
+	transition: 0.5s
+	width: 35%
+	box-sizing: border-box
+
+	&:active,
+	&:focus
+		border-radius: 5px
+		border: 1px solid $pink
+		box-sizing: border-box
+		outline: none
+		transition: 0.5s
+
+.mailing__form
+	display: -ms-flex
+	display: -webkit-flex
+	display: flex
+	justify-content: center
+	margin-top: 30px
+	width: 100%
+
+.container--mailing
+	align-items: center
+	display: -ms-flex
+	display: -webkit-flex
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+.button--mailing
+	background: $pink
+
+	&:hover
+		background: darken($pink, 30%)
+		border-color: darken($pink, 30%)
+
+	a
+		color: #fff
+		text-transform: uppercase
+
+/* Contacts section */
+
+.contacts
+	background: #fff
+	padding: 100px 0
+	position: relative
+
+.contacts__info
+	width: 100%
+	position: relative
+	padding-bottom: 50px
+
+.contacts__bg-block-wrapper
+	width: 100%
+	position: relative
+	overflow: hidden
+
+.contacts__bg-block
+	background: #2d2d2d
+	position: absolute
+	right: 0
+	top: 0
+	height: 100%
+	width: 35%
+
+.contacts__form
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+.contacts__input
+	width: 46%
+	padding: 20px 50px
+	background: rgba(0, 0, 0, 0.1)
+	border: none
+	border-radius: 10px
+	outline: none
+
+	&::placeholder
+		color: rgba(0, 0, 0, 0.7)
+		font-size: 1.1em
+		font-weight: 600
+
+.contacts__textarea
+	width: 100%
+	background: rgba(0, 0, 0, 0.1)
+	margin: 50px 0
+	border: none
+	border-radius: 10px
+	padding: 30px 50px
+
+	&:focus,
+	&:active
+		outline: none
+
+	&::placeholder
+		color: rgba(0, 0, 0, 0.7)
+		font-size: 1.1em
+		font-weight: 600
+
+.button--contacts
+	width: 100%
+	padding: 25px 50px
+
+.contacts__h3
+	color: #fff
+	font-size: 1.3em
+	text-transform: uppercase
+	font-weight: 600
+	text-align: left
+	margin-bottom: 35px
+
+.contacts__p
+	color: #fff
+	line-height: 1.8em
+	margin: 15px 0
+	max-width: 80%
+
+.container--contacts-section
+	position: relative
+	z-index: 450
+
+.contacts__information-wrapper
+	position: absolute
+	top: 50%
+	transform: translate(0, -50%)
+
+.contacts__information
+	align-items: flex-end
+	display: -ms-flex
+	display: -webkit-flex
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	position: relative
+
+/* Footer */
+
+.footer
+	background: #313030
+
+.container--footer
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+.copyright__link
+	color: #ccc
+	text-decoration: none
+	border-bottom: 1px dotted #ccc
+	box-sizing: border-box
+	transition: 0.5s
+
+	&:hover
+		color: darken(#ccc, 30%)
+		border-bottom: none
+		box-sizing: border-box
+		transition: 0.5s
+		text-decoration: none
+
+.footer__p
+	padding: 50px 0
+	color: #b8b8b8
+
+.social-bar
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	align-items: center
+
+.social-bar__a
+	align-items: center
+	background: #fff
+	border-radius: 100px
+	display: -ms-flex
+	display: -webkit-flex
+	display: flex
+	height: 40px
+	justify-content: center
+	width: 40px
+	margin: 0 10px
+	transition: 0.5s
+
+	&:hover
+		text-decoration: none
+		background: darken(#fff, 20%)
+		transition: 0.5s
+
+	i
+		font-size: 1.5em
+		color: #313030
+
+/* Test */
+
+/* Media quaries */
+
+@import "_media.sass"

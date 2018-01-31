@@ -93,7 +93,8 @@ h2 {
           justify-content: center;
   list-style: none;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
   .navbar-nav li {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -700,7 +701,9 @@ h2 {
   top: 50%;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
-          transform: translate(0, -50%); }
+          transform: translate(0, -50%);
+  width: 70%;
+  float: right; }
 
 .contacts__information {
   -webkit-box-align: end;
@@ -722,6 +725,11 @@ h2 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: relative; }
+
+.navbar-collapse.in {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 /* Footer */
 .footer {

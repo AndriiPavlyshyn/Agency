@@ -209,8 +209,36 @@
 
 @media screen and (max-width: 560px) {
   .organaisation__p,
-  .title__p {
-    width: 95%; }
+  .title__p,
+  .douknow__h2,
+  .service__h3,
+  .service__p,
+  .title__h2,
+  .slide__p,
+  .slide__name,
+  .social-network,
+  .contacts__information-wrapper {
+    width: 100%; }
+  .service__h3,
+  .slide__name {
+    text-align: center; }
+  .service {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .service__img {
+    width: 13%; }
   .contacts__information-wrapper {
     padding: 20px; }
   .title__h2 {
